@@ -37,6 +37,12 @@ nav a {
     margin: 0 15px;
     text-decoration: none;
 }
+
+/* Add transitions to menu items */
+.nav-menu li {
+    transition: transform 0.3s;
+}
+
 main {
     padding: 20px;
 }
