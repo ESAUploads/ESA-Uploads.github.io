@@ -66,6 +66,11 @@ text-decoration: none;
 
 .level-button:hover {
     background-color: #218838; /* Darker green on hover */\
+    footer {
+    margin-top: auto; /* Pushes the footer to the bottom */
+}
+
+
 
 
 
