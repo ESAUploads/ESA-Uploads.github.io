@@ -71,8 +71,7 @@ text-decoration: none;
 }
 
 .level-button:hover {
-    background-color: #218838; /* Darker green on hover */\
-    footer {
+    background-color: #218838; 
     margin-top: auto; /* Pushes the footer to the bottom */
 }
 
