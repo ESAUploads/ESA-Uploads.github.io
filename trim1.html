@@ -1,0 +1,169 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School of Economics</title>
+    <style>
+        /* Navigation Styles */
+        .nav-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+        }
+
+        .nav-toggle {
+            background-color: #2ecc71;
+            border: none;
+            color: white;
+            cursor: pointer;
+            font-size: 1.5rem;
+            padding: 1rem;
+            position: fixed;
+            left: 0;
+            top: 0;
+            transition: 0.3s;
+            z-index: 1001;
+            border-radius: 40%;
+        }
+
+        .nav-menu {
+            background-color: #1a5f1a;
+            width: 200px;
+             height: 50vh;
+            position: fixed;
+            left: -200px;
+            top: 0;
+            transition: 0.3s;
+            padding-top: 60px;
+        }
+
+        .nav-menu.active {
+            left: 0;
+        }
+
+        .nav-menu .nav-title {
+            color: white;
+            font-size: 1.2rem;
+            padding: 1rem;
+            text-align: center;
+            background-color: #2ecc71;
+            border-bottom: 1px solid #27ae60;
+        }
+
+        .nav-menu ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .nav-menu li {
+            border-bottom: 1px solid #27ae60;
+        }
+
+        .nav-menu a {
+            color: white;
+            text-decoration: none;
+            display: block;
+            padding: 1rem;
+            transition: 0.3s;
+            font-size: 1.1rem;
+        }
+
+        .nav-menu a:hover {
+            background-color: #27ae60;
+            padding-left: 1.5rem;
+        }
+
+        /* Active Link Styling */
+        .active {
+            background-color: #27ae60 !important;
+            border-left: 4px solid #2ecc71;
+        }
+
+        /* Content Area */
+        .content {
+            margin-left: 200px;
+            padding: 20px;
+            transition: 0.3s;
+        }
+
+        @media (max-width: 768px) {
+            .nav-menu {
+                width: 150px;
+                left: -150px;
+            }
+            .nav-menu.active {
+                left: 0;
+            }
+            .content {
+                margin-left: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="nav-container">
+        <button class="nav-toggle" onclick="toggleMenu()">☰</button>
+        <nav class="nav-menu">
+            
+            <ul>
+                <li><a href="Home2.html" class="active">Home</a></li>
+                <li><a href="School of Economics.html">Slides</a></li>
+                <li><a href="constitution.html">Constitution</a></li>
+                <li><a href="past-questions.html">Past Questions</a></li>
+                <li><a href="Books.html">Books</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    
+    <script>
+        function toggleMenu() {
+            document.querySelector('.nav-menu').classList.toggle('active');
+        }
+
+        // Add active class to current page
+        const currentPage = window.location.pathname.split('/').pop();
+        const navLinks = document.querySelectorAll('.nav-menu a');
+        
+        navLinks.forEach(link => {
+            if (link.getAttribute('href') === currentPage) {
+                link.classList.add('active');
+            }
+        });
+
+        // Close menu when clicking outside
+        document.addEventListener('click', (event) => {
+            const navMenu = document.querySelector('.nav-menu');
+            const navToggle = document.querySelector('.nav-toggle');
+            
+            if (!navMenu.contains(event.target) && !navToggle.contains(event.target)) {
+                navMenu.classList.remove('active');
+            }
+        });
+    </script>
+</body>
+</html>
+
+
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+</head>
+<body>
+
+    <header>
+        <img src="badge.jpg" alt="Faculty Badge" class="faculty-badge">
+        <h1>School of Economics Uploads</h1>
+
+         <a href="Q11.html" class="level-button">First Trimester</a><br>
+
+         <a href="Q22.html" class="level-button">Second Trimester</a><br>
+
+
+
+       
