@@ -3,6 +3,26 @@ body, html {
     padding: 0;
 }
 
+
+
+/* Button Styling - Green Buttons */
+.level-button {
+    display: inline-block; /* Make the link behave like a button */
+    padding: 1rem 2rem; /* Add padding for a button-like appearance */
+    margin: 10px; /* Space between buttons */
+    background-color: #28a745; /* Button background color (green) */
+    color: white; /* Text color */
+    text-decoration: none; /* Remove underline */
+    border-radius: 300px; /* Rounded corners */
+    font-size: 16px; /* Font size */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+.level-button:hover {
+    background-color: #218838; /* Darker green on hover */\
+
+    
+
 header {
     background: url(Studies.png) no-repeat center center fixed;
     padding: 10px;
