@@ -3,10 +3,8 @@ body, html {
     padding: 0;
 }
 
-
-
-/* Button Styling - Green Buttons */
 .level-button {
+    /* Button Styling - Green Buttons */
     display: inline-block; /* Make the link behave like a button */
     padding: 1rem 2rem; /* Add padding for a button-like appearance */
     margin: 10px; /* Space between buttons */
