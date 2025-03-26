@@ -1,141 +1,329 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-6VZ3L30VR6"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-6VZ3L30VR6');
+</script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>School of Economics</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Navigation Styles */
+        .nav-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+        }
+
+        .nav-toggle {
+            background-color: #2ecc71;
+            border: none;
+            color: white;
+            cursor: pointer;
+            font-size: 1.5rem;
+            padding: 1rem;
+            position: fixed;
+            left: 0;
+            top: 0;
+            transition: 0.3s;
+            z-index: 1001;
+             border-radius: 40%;
+        }
+
+        .nav-menu {
+            background-color: #1a5f1a;
+            width: 200px;
+            height: 50vh;
+            position: fixed;
+            left: -200px;
+            top: 0;
+            transition: 0.3s;
+            padding-top: 60px;
+        }
+
+        .nav-menu.active {
+            left: 0;
+        }
+
+        .nav-menu .nav-title {
+            color: white;
+            font-size: 1.2rem;
+            padding: 1rem;
+            text-align: center;
+            background-color: #2ecc71;
+            border-bottom: 1px solid #27ae60;
+        }
+
+        .nav-menu ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .nav-menu li {
+            border-bottom: 1px solid #27ae60;
+        }
+
+        .nav-menu a {
+            color: white;
+            text-decoration: none;
+            display: block;
+            padding: 1rem;
+            transition: 0.3s;
+            font-size: 1.1rem;
+        }
+
+        .nav-menu a:hover {
+            background-color: #27ae60;
+            padding-left: 1.5rem;
+        }
+
+        /* Active Link Styling */
+        .active {
+            background-color: #27ae60 !important;
+            border-left: 4px solid #2ecc71;
+        }
+
+        /* Content Area */
+        .content {
+            margin-left: 200px;
+            padding: 20px;
+            transition: 0.3s;
+        }
+
+        @media (max-width: 768px) {
+            .nav-menu {
+                width: 150px;
+                left: -150px;
+            }
+            .nav-menu.active {
+                left: 0;
+            }
+            .content {
+                margin-left: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="nav-container">
+        <button class="nav-toggle" onclick="toggleMenu()">☰</button>
+        <nav class="nav-menu">
+            
+            <ul>
+                <li><a href="Home2.html" class="active">Home</a></li>
+                <li><a href="School of Economics.html">Slides</a></li>
+                <li><a href="constitution.html">Constitution</a></li>
+                <li><a href="past-questions.html">Past Questions</a></li>
+                <li><a href="Books.html">Books</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    
+    <script>
+        function toggleMenu() {
+            document.querySelector('.nav-menu').classList.toggle('active');
+        }
+
+        // Add active class to current page
+        const currentPage = window.location.pathname.split('/').pop();
+        const navLinks = document.querySelectorAll('.nav-menu a');
+        
+        navLinks.forEach(link => {
+            if (link.getAttribute('href') === currentPage) {
+                link.classList.add('active');
+            }
+        });
+
+        // Close menu when clicking outside
+        document.addEventListener('click', (event) => {
+            const navMenu = document.querySelector('.nav-menu');
+            const navToggle = document.querySelector('.nav-toggle');
+            
+            if (!navMenu.contains(event.target) && !navToggle.contains(event.target)) {
+                navMenu.classList.remove('active');
+            }
+        });
+    </script>
+</body>
+</html>
+
+
 
 </head>
 </head>
 <body>
 
+
     <header>
-    
 
-
+       
+    </header>
 
     <main>
         <section id="resources">
            
+            <div class="file">
+                 <img src="badge.jpg" alt="Faculty Badge" class="faculty-badge">
+                 <header>
+                     
+                 <h3>School of Economics Uploads</h3>
+        </nav>
+
+               
+     <title>Premium Homepage</title>
     <style>
-        /* Glassmorphism Container */
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+        /* Glassmorphism container */
         .glass-container {
             background: rgba(255, 255, 255, 0.1);
             backdrop-filter: blur(10px);
             border-radius: 20px;
             padding: 30px;
             box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
-            max-width: 1200px;
-            width: 80%;
-            margin: 20px auto;
+            max-width: 500px;
+            width: 70%;
         }
-
-        /* Header Section */
-        header {
-            background: url(Studies.png) no-repeat center center fixed;
-            padding: 10px;
-            text-align: center;
-            -webkit-background-size: cover;
-            -moz-background-size: cover;
-            -o-background-size: cover;
-            background-size: cover;
-            position: relative;
+        /* Card grid */
+        .card-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 20px;
         }
-
-        .faculty-badge {
-            width: 140px;
-            height: 140px;
-            border-radius: 50%;
-            object-fit: cover;
-            margin: 20px auto;
-            display: block;
-        }
-
-        h1 {
-            color: white;
-            font-size: 26px;
-            text-align: center;
-            margin: 20px 0;
-        }
-
-        /* Button Styling */
-        .level-button {
-            display: inline-block;
-            padding: 1rem 2rem;
-            margin: 10px;
-            background-color: rgba(255, 255, 255, 0.2);
+        /* Individual cards */
+        .premium-card {
+            background: rgba(255, 255, 255, 0.2);
             backdrop-filter: blur(10px);
-            border-radius: 300px;
+            border-radius: 15px;
+            padding: 25px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        .premium-card::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: linear-gradient(45deg, transparent, #2575fc, transparent);
+            animation: shine 3s infinite;
+        }
+        .premium-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+        }
+        .card-title {
+            font-size: 20px;
+            font-weight: 600;
+            color: #fff;
+            margin-bottom: 15px;
+            text-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+        .card-content {
+            color: #fff;
+            opacity: 0.8;
+            margin-bottom: 20px;
+        }
+        .premium-link {
+            display: block;
+            padding: 12px 25px;
+            background: linear-gradient(135deg, #2575fc 0%, #6a11cb 100%);
             color: white;
             text-decoration: none;
-            font-size: 16px;
-            transition: background-color 0.3s;
-            border: none;
-            cursor: pointer;
+            border-radius: 25px;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            text-align: center;
+            position: relative;
+            z-index: 1;
         }
-
-        .level-button:hover {
-            background-color: rgba(255, 255, 255, 0.3);
+        .premium-link:hover {
+            background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+            transform: scale(1.05);
         }
-
-        /* Responsive Design */
-        @media (max-width: 768px) {
-            .glass-container {
-                padding: 20px;
-                margin: 10px auto;
-            }
-            .level-button {
-                padding: 0.8rem 1.5rem;
-                font-size: 14px;
-            }
-        }
-
-        @media (max-width: 480px) {
-            .glass-container {
-                padding: 15px;
-            }
-            .level-button {
-                padding: 0.6rem 1rem;
-                font-size: 12px;
-            }
+        @keyframes shine {
+            0% { transform: rotate(45deg) translateX(-100%); }
+            100% { transform: rotate(45deg) translateX(100%); }
         }
     </style>
 </head>
 <body>
-    <!-- Header Section -->
-    <header>
-        <div class="glass-container">
-            <img src="badge.jpg" alt="Faculty Badge" class="faculty-badge">
-            <h1>School of Economics Uploads</h1>
-        </div>
-    </header>
-
-    <!-- Main Content -->
     <div class="glass-container">
-        <div class="button-group">
+        <h1 style="color: white; text-align: center; margin-bottom: 30px;">Books</h1>
+        <div class="card-grid">
+            <!-- Slides Card -->
+            <div class="premium-card">
+                <div class="card-title">Slides</div>
+        
+                <a href="School of Economics.html" class="premium-link">View Slides</a>
+            </div>
 
-    <button class="level-button">Books</button><br>
-            <a href="Stata.html" class="level-button">Stata</a>
-            <a href="Stats.html" class="level-button">Statistics</a>
-            <a href="Micro.html" class="level-button">Microeconomics</a>
-            <a href="Macro.html" class="level-button">Macroeconomics</a>
-            <a href="Rmethods.html" class="level-button">Research Methods</a>
-            <a href="Green.html" class="level-button">Green Economics</a>
-            <a href="Ecomaths.html" class="level-button">Mathematics for Economics</a>
+            <!-- Macroeconomics Card -->
+            <div class="premium-card">
+                <div class="card-title">Macroeconomics</div>
+                <a href="Macro.html" class="premium-link">Explore Books</a>
+            </div>
+
+            <!-- Research Methods Card -->
+            <div class="premium-card">
+                <div class="card-title">Research Methods</div>
+                <a href="Rmethods.html" class="premium-link">View Books</a>
+            </div>
+
+            <!-- Green Economics Card -->
+            <div class="premium-card">
+                <div class="card-title">Green Economics</div>
+                <a href="Green.html" class="premium-link">Explore Books</a>
+            </div>
+
+               <!-- Microeconomics Card -->
+            <div class="premium-card">
+                <div class="card-title">Microeconomics</div>
+                <a href="Micro.html" class="premium-link">Explore Books</a>
+            </div>
+
+             <!-- Macroeconomics Card -->
+            <div class="premium-card">
+                <div class="card-title">Macroeconomics</div>
+                <a href="Macro.html" class="premium-link">Explore Books</a>
+            </div>
+
+             <!-- Stata Card -->
+            <div class="premium-card">
+                <div class="card-title">Stata</div>
+                <a href="Stata.html" class="premium-link">Explore Books</a>
+            </div>
+
+            <!-- Mathematics for Economics Card -->
+            <div class="premium-card">
+                <div class="card-title">Mathematics for Economics</div>
+                
+                <a href="Ecomaths.html" class="premium-link">View Books</a>
+            </div>
         </div>
     </div>
-</body>
-</html>
-
-                
-            </div>
-        </section>
-    </main>
-    <footer>
-      <p>&copy; 2025 School of Economics Uploads. All rights reserved.</p><br>
-         <p>&copy; Design by Issahak.</p>
-         
-    </footer>
 </body>
 </html>
