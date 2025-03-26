@@ -62,7 +62,8 @@ text-decoration: none;
   footer {
     margin-top: auto; /* Pushes the footer to the bottom */
 }
-   #button.button {
+
+ #button.button {
       /* Button Styling - Green Buttons */
 .level-button {
     display: inline-block; /* Make the link behave like a button */
