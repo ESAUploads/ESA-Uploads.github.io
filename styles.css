@@ -53,8 +53,6 @@ p {
     margin: 0 15px;
 }
 
-footer {
-    margin-top: auto;
 }
 
 /* Button Styling - Green Buttons */
@@ -73,3 +71,6 @@ footer {
 .level-button:hover {
     background-color: #218838;
 }
+
+footer {
+    margin-top: auto;
