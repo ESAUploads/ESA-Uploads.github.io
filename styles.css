@@ -3,10 +3,7 @@ html
 
 header {
 
-h1{
-    color: White
-     font-size: 16px
-}
+   
    
     background : url(Studies.png) no-repeat center center fixed; 
     padding: 10px;
@@ -24,6 +21,10 @@ h1{
     object-fit: cover; /* Ensures the image covers the area without distortion */
 }
 
+h1{
+    color: White
+   font-size: 16px
+}
 
 h2{
     color: White;
