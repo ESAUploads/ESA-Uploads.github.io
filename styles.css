@@ -21,6 +21,21 @@ header {
 
 }
 
+
+h1 {
+    color: White
+
+}
+
+h1 {
+    font-size: 26px;
+     
+
+}
+
+h2{
+    color: White;
+}
 .button {
     
       /* Button Styling - Green Buttons */
@@ -39,24 +54,7 @@ header {
 
 .level-button:hover {
     background-color: #218838; /* Darker green on hover */\
-
-
-
-h1 {
-    color: White
-
 }
-
-h1 {
-    font-size: 26px;
-     
-
-}
-
-h2{
-    color: White;
-}
-
 nav a {
     color: white;
     margin: 0 15px;
