@@ -1,10 +1,72 @@
-body, html {
-    margin: 0;
-    padding: 0;
+body,
+html
+
+header {
+   
+    background : url(Studies.png) no-repeat center center fixed; 
+    padding: 10px;
+     text-align: center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
+.faculty-badge {
+    width: 140px; /* Increased size for the badge */
+    height: 140px; /* Set height to make it round */
+    border-radius: 50%; /* Makes the badge round */
+    object-fit: cover; /* Ensures the image covers the area without distortion */
+    
+
+}
+}
+
+h1 {
+    color: White
+
+}
+
+h1 {
+    font-size: 26px;
+    
+    
+
+}
+
+h2{
+    color: White;
+}
+h5 {
+    color: White
+
+}
+
+h5 {
+    font-size: 26px;
+
+
+nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+}
+main {
+    padding: 20px;
+}
+.file {
+    margin-bottom: 10px;
+    color: green;
+
+}
+p {
+ color: white;  
+ margin: 0 15px;
+text-decoration: none; 
+}
+
+/* Button Styling - Green Buttons */
 .level-button {
-    /* Button Styling - Green Buttons */
     display: inline-block; /* Make the link behave like a button */
     padding: 1rem 2rem; /* Add padding for a button-like appearance */
     margin: 10px; /* Space between buttons */
@@ -21,65 +83,8 @@ body, html {
 
     
 
-header {
-    background: url(Studies.png) no-repeat center center fixed;
-    padding: 10px;
-    text-align: center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+
+  footer {
+    margin-top: auto; /* Pushes the footer to the bottom */
 }
 
-.faculty-badge {
-    width: 140px;
-    height: 140px;
-    border-radius: 50%;
-    object-fit: cover;
-}
-
-h1 {
-    color: white;
-    font-size: 26px;
-}
-
-nav a {
-    color: white;
-    margin: 0 15px;
-    text-decoration: none;
-}
-
-main {
-    padding: 20px;
-}
-
-.file {
-    margin-bottom: 10px;
-    color: green;
-}
-
-p {
-    color: white;
-    margin: 0 15px;
-}
-
-footer {
-    margin-top: auto;
-}
-
-/* Button Styling - Green Buttons */
-.level-button {
-    display: inline-block;
-    padding: 1rem 2rem;
-    margin: 10px;
-    background-color: #28a745;
-    color: white;
-    text-decoration: none;
-    border-radius: 300px;
-    font-size: 16px;
-    transition: background-color 0.3s;
-}
-
-.level-button:hover {
-    background-color: #218838;
-}
