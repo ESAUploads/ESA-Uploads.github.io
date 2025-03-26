@@ -1,4 +1,8 @@
-<!-- Google tag (gtag.js) -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-6VZ3L30VR6"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
@@ -6,13 +10,12 @@
   gtag('js', new Date());
 
   gtag('config', 'G-6VZ3L30VR6');
-</script><!DOCTYPE html>
-<html lang="en">
-<head>
+</script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>School of Economics</title>
-     <style>
+    <link rel="stylesheet" href="styles.css">
+    <style>
         /* Navigation Styles */
         .nav-container {
             position: fixed;
@@ -39,7 +42,7 @@
         .nav-menu {
             background-color: #1a5f1a;
             width: 200px;
-             height: 50vh;
+            height: 50vh;
             position: fixed;
             left: -200px;
             top: 0;
@@ -117,7 +120,7 @@
         <nav class="nav-menu">
             
             <ul>
-                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="Home2.html" class="active">Home</a></li>
                 <li><a href="School of Economics.html">Slides</a></li>
                 <li><a href="constitution.html">Constitution</a></li>
                 <li><a href="past-questions.html">Past Questions</a></li>
@@ -156,42 +159,147 @@
 </body>
 </html>
 
-    <link rel="stylesheet" href="styles.css">
+
 
 </head>
 </head>
 <body>
 
-    <header>
-        <img src="badge.jpg" alt="Faculty Badge" class="faculty-badge">
-        <h1>School of Economics Uploads</h1>
-        <nav>
-            <a href="Home.html">Home</a>
-            <a href="Contact.html">Contact</a>
-        </nav>
 
+    <header>
+
+       
     </header>
 
     <main>
         <section id="resources">
-              <button class="level-button">Slides</button>
+           
             <div class="file">
+                 <img src="badge.jpg" alt="Faculty Badge" class="faculty-badge">
+                 <header>
+                     
+                 <h3>School of Economics Uploads</h3>
+        </nav>
+
                
-               <div class="file">
-   
-     <a href="Level 100.html" class="level-button">Level 100</a><br>
-     <a href="Level 200.html" class="level-button">Level 200</a><br>
-     <a href="Level 300.html" class="level-button">Level 300</a><br>
-     <a href="Level 400.html" class="level-button">Level 400</a><br>
-    
-               
-                
+     <title>Premium Homepage</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+        /* Glassmorphism container */
+        .glass-container {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 30px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+            max-width: 500px;
+            width: 70%;
+        }
+        /* Card grid */
+        .card-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 20px;
+        }
+        /* Individual cards */
+        .premium-card {
+            background: rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(10px);
+            border-radius: 15px;
+            padding: 25px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        .premium-card::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: linear-gradient(45deg, transparent, #2575fc, transparent);
+            animation: shine 3s infinite;
+        }
+        .premium-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+        }
+        .card-title {
+            font-size: 20px;
+            font-weight: 600;
+            color: #fff;
+            margin-bottom: 15px;
+            text-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+        .card-content {
+            color: #fff;
+            opacity: 0.8;
+            margin-bottom: 20px;
+        }
+        .premium-link {
+            display: block;
+            padding: 12px 25px;
+            background: linear-gradient(135deg, #2575fc 0%, #6a11cb 100%);
+            color: white;
+            text-decoration: none;
+            border-radius: 25px;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            text-align: center;
+            position: relative;
+            z-index: 1;
+        }
+        .premium-link:hover {
+            background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+            transform: scale(1.05);
+        }
+        @keyframes shine {
+            0% { transform: rotate(45deg) translateX(-100%); }
+            100% { transform: rotate(45deg) translateX(100%); }
+        }
+    </style>
+</head>
+<body>
+    <div class="glass-container">
+        <h1 style="color: white; text-align: center; margin-bottom: 30px;">Slides</h1>
+        <div class="card-grid">
+            <!-- Slides Card -->
+            <div class="premium-card">
+                <div class="card-title">Level 100</div>
+        
+                <a href="Level 100.html" class="premium-link">View Slides</a>
             </div>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2025 School of Economics Uploads. All rights reserved.</p><br>
-         <p>&copy; Design by Issahak.</p>
-    </footer>
+
+            <!-- Level 200 Card -->
+            <div class="premium-card">
+                <div class="card-title">Level 200</div>
+                <a href="Level 200.html" class="premium-link">View Slides</a>
+            </div>
+
+            <!-- Level 300 Card -->
+            <div class="premium-card">
+                <div class="card-title">Level 300</div>
+                <a href="Level 300.html" class="premium-link">View Slides</a>
+            </div>
+
+            <!-- Level 400 Card -->
+            <div class="premium-card">
+                <div class="card-title">Level 400</div>
+                <a href="Level 400.html" class="premium-link">View Slides</a>
+            </div>
+        </div>
+        </div>
+    </div>
 </body>
 </html>
