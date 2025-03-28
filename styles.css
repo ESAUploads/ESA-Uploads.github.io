@@ -3,7 +3,11 @@ html
 
 header {
 
-   
+   /* Use !important to override conflicts */
+h1 {
+    color: white !important;
+   font-size: 19px
+}
    
     background : url(Studies.png) no-repeat center center fixed; 
     padding: 10px;
@@ -23,11 +27,7 @@ header {
 
 }
 
-/* Use !important to override conflicts */
-h1 {
-    color: white !important;
-   font-size: 19px
-}
+
 h2{
     color: White;
    font-size: 19px
