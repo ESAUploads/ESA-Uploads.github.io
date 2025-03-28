@@ -22,10 +22,6 @@ header {
     top: 20px;
 
 }
-      h1{
-            font-size: 19px;
-            color: white
-        }
     
 h2{
     color: White;
@@ -113,5 +109,9 @@ main {
 main {
     margin-bottom: 60px; /* Adjust based on footer height */
 }
-
+ 
+   h1 {
+            font-size: 19px;
+            color: white
+      }
 
