@@ -22,7 +22,11 @@ header {
     top: 20px;
 
 }
-    
+
+/* Use !important to override conflicts */
+h1 {
+    color: white !important;
+}
 h2{
     color: White;
    font-size: 16px
