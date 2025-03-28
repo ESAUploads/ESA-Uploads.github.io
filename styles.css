@@ -19,8 +19,7 @@ header {
     height: 140px; /* Set height to make it round */
     border-radius: 50%; /* Makes the badge round */
     object-fit: cover; /* Ensures the image covers the area without distortion */
-    position: fixed; /* Keeps the badge fixed relative to the viewport */
-   top: 10px; /* Positions it 10px from the top */
+    
 }
 
 h1{
