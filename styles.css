@@ -22,12 +22,11 @@ header {
     top: 20px;
 
 }
-  <style>
-        h1 {
+        .h1{
             font-size: 19px;
             color: white
         }
-    </style>
+    
 h2{
     color: White;
    font-size: 16px
