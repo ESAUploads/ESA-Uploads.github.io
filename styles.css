@@ -1,40 +1,40 @@
-body,
-html
+body, html {
+    margin: 0;
+    padding: 0;
+}
 
 header {
-
-   
-   
-    background : url(Studies.png) no-repeat center center fixed; 
+    background: url(Studies.png) no-repeat center center fixed;
     padding: 10px;
-     text-align: center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+    text-align: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
 .faculty-badge {
-    width: 140px; /* Increased size for the badge */
-    height: 140px; /* Set height to make it round */
-    border-radius: 50%; /* Makes the badge round */
-    object-fit: cover; /* Ensures the image covers the area without distortion */  
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    object-fit: cover;
+    position: relative;
     top: 20px;
-
+    margin: 20px auto;
+    display: block;
 }
 
-/* Use !important to override conflicts */
+/* Single h1 rule with !important */
 h1 {
     color: white !important;
-}
-h2{
-    color: White;
-   font-size: 16px
+    font-size: 26px !important; /* Adjust size here */
+    text-align: center;
+    margin: 20px 0;
 }
 
-h3{
-    color: White;
-   font-size: 16px
+h2, h3 {
+    color: white;
+    font-size: 16px;
 }
 
 nav a {
@@ -42,55 +42,31 @@ nav a {
     margin: 0 15px;
     text-decoration: none;
 }
+
 main {
     padding: 20px;
 }
+
 .file {
     margin-bottom: 10px;
     color: green;
-
 }
 
 .level-button {
-      /* Button Styling - Green Buttons */
-
-    display: inline-block; /* Make the link behave like a button */
-    padding: 1rem 2rem; /* Add padding for a button-like appearance */
-    margin: 10px; /* Space between buttons */
-    background-color: #28a745; /* Button background color (green) */
-    color: white; /* Text color */
-    text-decoration: none; /* Remove underline */
-    border-radius: 300px; /* Rounded corners */
-    font-size: 16px; /* Font size */
-    transition: background-color 0.3s; /* Smooth transition for hover effect */
-
+    display: inline-block;
+    padding: 1rem 2rem;
+    margin: 10px;
+    background-color: #28a745;
+    color: white;
+    text-decoration: none;
+    border-radius: 300px;
+    font-size: 16px;
+    transition: background-color 0.3s;
 }
 
 .level-button:hover {
-    background-color: #218838; /* Darker green on hover */\
-
-
-
-/* Button Styling - Green Buttons */
-.level-button {
-    display: inline-block; /* Make the link behave like a button */
-    padding: 1rem 2rem; /* Add padding for a button-like appearance */
-    margin: 10px; /* Space between buttons */
-    background-color: #28a745; /* Button background color (green) */
-    color: white; /* Text color */
-    text-decoration: none; /* Remove underline */
-    border-radius: 300px; /* Rounded corners */
-    font-size: 16px; /* Font size */
-    transition: background-color 0.3s; /* Smooth transition for hover effect */
+    background-color: #218838;
 }
-
-.level-button:hover {
-    background-color: #218838; /* Darker green on hover */\
-
-
-
-} 
-
 
 .footer {
     position: fixed;
@@ -98,24 +74,13 @@ main {
     left: 0;
     width: 100%;
     background-color: white;
-    color: white;
+    color: black; /* Changed to black for visibility */
     padding: 1rem;
     text-align: center;
     z-index: 1000;
-}
-
-/* Optional: Add a shadow for depth */
-.footer {
     box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
 }
 
-/* For content spacing */
 main {
-    margin-bottom: 60px; /* Adjust based on footer height */
+    margin-bottom: 60px;
 }
- 
-   h1 {
-            font-size: 19px;
-            color: white
-      }
-
