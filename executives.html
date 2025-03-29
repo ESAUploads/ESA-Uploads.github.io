@@ -12,62 +12,7 @@
 </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    </style>
-    
-    </head>
-         <body>
-    <div class="nav-container">         
 
-        <nav class="nav-menu">
-            
-            <ul>
-                <li><a href="Home2.html" class="active">Home</a></li>
-                <li><a href="School of Economics.html">Slides</a></li>
-                <li><a href="constitution.html">Constitution</a></li>
-                <li><a href="past-questions.html">Past Questions</a></li>
-                <li><a href="Books.html">Books</a></li>
-                <li><a href="contact.html">Contact Us</a></li>
-            </ul>
-        </nav>
-    </div>
-
-    
-    <script>
-        function toggleMenu() {
-            document.querySelector('.nav-menu').classList.toggle('active');
-        }
-
-        // Add active class to current page
-        const currentPage = window.location.pathname.split('/').pop();
-        const navLinks = document.querySelectorAll('.nav-menu a');
-        
-        navLinks.forEach(link => {
-            if (link.getAttribute('href') === currentPage) {
-                link.classList.add('active');
-            }
-        });
-
-        // Close menu when clicking outside
-        document.addEventListener('click', (event) => {
-            const navMenu = document.querySelector('.nav-menu');
-            const navToggle = document.querySelector('.nav-toggle');
-            
-            if (!navMenu.contains(event.target) && !navToggle.contains(event.target)) {
-                navMenu.classList.remove('active');
-            }
-        });
-    </script>
-</body>
-</html>
-
-    <link rel="stylesheet" href="styles.css">
-
-</head>
-</head>
-<body>
-
-    <header>
     <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -230,6 +175,58 @@
       }
     }
   </style>
+    
+    </head>
+         <body>
+    <div class="nav-container">         
+
+        <nav class="nav-menu">
+            
+            <ul>
+                <li><a href="Home2.html" class="active">Home</a></li>
+                <li><a href="School of Economics.html">Slides</a></li>
+                <li><a href="constitution.html">Constitution</a></li>
+                <li><a href="past-questions.html">Past Questions</a></li>
+                <li><a href="Books.html">Books</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    
+    <script>
+        function toggleMenu() {
+            document.querySelector('.nav-menu').classList.toggle('active');
+        }
+
+        // Add active class to current page
+        const currentPage = window.location.pathname.split('/').pop();
+        const navLinks = document.querySelectorAll('.nav-menu a');
+        
+        navLinks.forEach(link => {
+            if (link.getAttribute('href') === currentPage) {
+                link.classList.add('active');
+            }
+        });
+
+        // Close menu when clicking outside
+        document.addEventListener('click', (event) => {
+            const navMenu = document.querySelector('.nav-menu');
+            const navToggle = document.querySelector('.nav-toggle');
+            
+            if (!navMenu.contains(event.target) && !navToggle.contains(event.target)) {
+                navMenu.classList.remove('active');
+            }
+        });
+    </script>
+</body>
+</html>
+
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+</head>
+<body>
 </head>
 <body>
 
