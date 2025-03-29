@@ -173,11 +173,9 @@
       .executive p {
         font-size: 1em;
       }
-    }
   </style>
-    
     </head>
-         <body>
+     <body>
     <div class="nav-container">         
 
         <nav class="nav-menu">
@@ -192,44 +190,6 @@
             </ul>
         </nav>
     </div>
-
-    
-    <script>
-        function toggleMenu() {
-            document.querySelector('.nav-menu').classList.toggle('active');
-        }
-
-        // Add active class to current page
-        const currentPage = window.location.pathname.split('/').pop();
-        const navLinks = document.querySelectorAll('.nav-menu a');
-        
-        navLinks.forEach(link => {
-            if (link.getAttribute('href') === currentPage) {
-                link.classList.add('active');
-            }
-        });
-
-        // Close menu when clicking outside
-        document.addEventListener('click', (event) => {
-            const navMenu = document.querySelector('.nav-menu');
-            const navToggle = document.querySelector('.nav-toggle');
-            
-            if (!navMenu.contains(event.target) && !navToggle.contains(event.target)) {
-                navMenu.classList.remove('active');
-            }
-        });
-    </script>
-</body>
-</html>
-
-    <link rel="stylesheet" href="styles.css">
-
-</head>
-</head>
-<body>
-</head>
-<body>
-
   <div class="page-wrapper" style="background-image: url('path/to/your/page-background.jpg'); background-size: cover; background-position: center;">
     <div class="executives-section">
       <h3>Our Esteemed Executives</h3>
