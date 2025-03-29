@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-6VZ3L30VR6"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-6VZ3L30VR6');
+</script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+     <style>
+        /* Navigation Styles */
+        .nav-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+        }
+
+        .nav-toggle {
+            background-color: #2ecc71;
+            border: none;
+            color: white;
+            cursor: pointer;
+            font-size: 1.5rem;
+            padding: 1rem;
+            position: fixed;
+            left: 0;
+            top: 0;
+            transition: 0.3s;
+            z-index: 1001;
+            border-radius: 40%;
+        }
+
+        .nav-menu {
+            background-color: #1a5f1a;
+            width: 200px;
+             height: 50vh;
+            position: fixed;
+            left: -200px;
+            top: 0;
+            transition: 0.3s;
+            padding-top: 60px;
+        }
+
+        .nav-menu.active {
+            left: 0;
+        }
+
+        .nav-menu .nav-title {
+            color: white;
+            font-size: 1.2rem;
+            padding: 1rem;
+            text-align: center;
+            background-color: #2ecc71;
+            border-bottom: 1px solid #27ae60;
+        }
+
+        .nav-menu ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .nav-menu li {
+            border-bottom: 1px solid #27ae60;
+        }
+
+        .nav-menu a {
+            color: white;
+            text-decoration: none;
+            display: block;
+            padding: 1rem;
+            transition: 0.3s;
+            font-size: 1.1rem;
+        }
+
+        .nav-menu a:hover {
+            background-color: #27ae60;
+            padding-left: 1.5rem;
+        }
+
+        /* Active Link Styling */
+        .active {
+            background-color: #27ae60 !important;
+            border-left: 4px solid #2ecc71;
+        }
+
+        /* Content Area */
+        .content {
+            margin-left: 200px;
+            padding: 20px;
+            transition: 0.3s;
+        }
+
+        @media (max-width: 768px) {
+            .nav-menu {
+                width: 150px;
+                left: -150px;
+            }
+            .nav-menu.active {
+                left: 0;
+            }
+            .content {
+                margin-left: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="nav-container">
+        <button class="nav-toggle" onclick="toggleMenu()">☰</button>
+        <nav class="nav-menu">
+            
+            <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="School of Economics.html">Slides</a></li>
+                <li><a href="constitution.html">Constitution</a></li>
+                <li><a href="past-questions.html">Past Questions</a></li>
+                <li><a href="Books.html">Books</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    
+    <script>
+        function toggleMenu() {
+            document.querySelector('.nav-menu').classList.toggle('active');
+        }
+
+        // Add active class to current page
+        const currentPage = window.location.pathname.split('/').pop();
+        const navLinks = document.querySelectorAll('.nav-menu a');
+        
+        navLinks.forEach(link => {
+            if (link.getAttribute('href') === currentPage) {
+                link.classList.add('active');
+            }
+        });
+
+        // Close menu when clicking outside
+        document.addEventListener('click', (event) => {
+            const navMenu = document.querySelector('.nav-menu');
+            const navToggle = document.querySelector('.nav-toggle');
+            
+            if (!navMenu.contains(event.target) && !navToggle.contains(event.target)) {
+                navMenu.classList.remove('active');
+            }
+        });
+    </script>
+</body>
+</html>
+
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+</head>
+<body>
+
+    <header>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Executives</title>
+  <style>
+    body {
+      font-family: 'Open Sans', sans-serif;
+      line-height: 1.7;
+      color: #4a4a4a;
+      background-color: #f8f9fa; /* Default page background */
+      margin: 0;
+      padding: 50px 0;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start; /* Align container to the top if other content is present */
+      min-height: auto;
+    }
+
+    /* Container for your overall page content if needed */
+    .page-wrapper {
+      max-width: 400px;
+      width: 95%;
+      margin: 20px auto; /* Center the page content */
+      /* You can set a background image for the page wrapper if needed */
+      /* background-image: url('path/to/your/page-background.jpg');
+      background-size: cover;
+      background-position: center; */
+    }
+
+    .executives-section {
+      background-color: rgba(255, 255, 255, 0.85); /* Translucent white */
+      border-radius: 15px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+      padding: 50px;
+      max-width: 1000px;
+      width: 100%; /* Take full width of the page wrapper */
+      margin: 20px auto; /* Center the executive section within the wrapper */
+    }
+
+    .executives-section h2 {
+      color: #37474f;
+      text-align: center;
+      margin-bottom: 40px;
+      font-size: 2.8em;
+      font-weight: 700;
+      letter-spacing: -0.5px;
+      border-bottom: 4px solid rgba(224, 224, 224, 0.7); /* Translucent border */
+      padding-bottom: 25px;
+    }
+
+    .executive-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 40px;
+    }
+
+    .executive {
+      background-color: rgba(255, 255, 255, 0.9); /* Slightly more opaque white */
+      border-radius: 12px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+      padding: 30px;
+      text-align: center;
+      transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    }
+
+    .executive:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.18);
+    }
+
+    .executive-image-wrapper {
+      position: relative;
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      overflow: hidden;
+      margin: 0 auto 25px;
+      border: 5px solid rgba(240, 240, 240, 0.7); /* Translucent border */
+    }
+
+    .executive img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    .executive h3 {
+      color: #263238;
+      margin-top: 0;
+      margin-bottom: 12px;
+      font-size: 1.8em;
+      font-weight: 600;
+    }
+
+    .executive p {
+      color: #616161;
+      margin-bottom: 10px;
+      font-size: 1.1em;
+    }
+
+    .executive p.position {
+      font-style: italic;
+      color: #757575;
+    }
+
+    .executive p.phone a {
+      color: #1e88e5;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.2s ease-in-out;
+      border-bottom: 1px solid transparent;
+      padding-bottom: 2px;
+    }
+
+    .executive p.phone a:hover {
+      color: #0d47a1;
+      border-bottom-color: #0d47a1;
+    }
+
+    /* Responsive adjustments */
+    @media (max-width: 768px) {
+      body {
+        padding: 30px 0;
+      }
+
+      .executives-section {
+        padding: 30px;
+      }
+
+      .executives-section h2 {
+        font-size: 2.4em;
+        margin-bottom: 30px;
+        padding-bottom: 20px;
+      }
+
+      .executive-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+      }
+
+      .executive {
+        padding: 25px;
+      }
+
+      .executive-image-wrapper {
+        width: 130px;
+        height: 130px;
+        margin-bottom: 20px;
+      }
+
+      .executive h3 {
+        font-size: 1.6em;
+      }
+
+      .executive p {
+        font-size: 1em;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="page-wrapper" style="background-image: url('path/to/your/page-background.jpg'); background-size: cover; background-position: center;">
+    <div class="executives-section">
+      <h3>Our Esteemed Executives</h3>
+      <div class="executive-grid">
+        <div class="executive">
+          <div class="executive-image-wrapper">
+            <img src="path/to/executive1.jpg" alt="Executive 1's Name">
+          </div>
+          <h3>Abdul Rahman Adam</h3>
+          <p class="position">President</p>
+          <p class="phone">Phone: <a href="tel:+233240168524">+233240168524</a></p>
+        </div>
+
+        <div class="executive">
+          <div class="executive-image-wrapper">
+            <img src="path/to/executive2.jpg" alt="Executive 2's Name">
+          </div>
+          <h3>Issahaku Yussif</h3>
+          <p class="position">Vice President</p>
+          <p class="phone">Phone: <a href="tel:+233545311582">+233545311582</a></p>
+        </div>
+
+        <div class="executive">
+          <div class="executive-image-wrapper">
+            <img src="sayibu.jpg" alt="Executive 3's Name">
+          </div>
+          <h3>Iddrisu Sayibu</h3>
+          <p class="position">Secretary</p>
+          <p class="phone">Phone: <a href="tel:+233203172716">+233203172716</a></p>
+        </div>
+
+        <div class="executive">
+          <div class="executive-image-wrapper">
+            <img src="path/to/executive4.jpg" alt="Executive 4's Name">
+          </div>
+          <h3>Bridget Fosua</h3>
+          <p class="position">Wocom</p>
+          <p class="phone">Phone: <a href="tel:+233506339676">+233506339676</a></p>
+        </div>
+
+         <div class="executive">
+          <div class="executive-image-wrapper">
+            <img src="jaami.jpg" alt="Executive 4's Name">
+          </div>
+          <h3>Yussif Abdul Jaami</h3>
+          <p class="position">Treasurer</p>
+          <p class="phone">Phone: <a href="tel:+233540929123">+233540929123</a></p>
+        </div>
+
+         <div class="executive">
+          <div class="executive-image-wrapper">
+            <img src="hafiz.jpg" alt="Executive 4's Name">
+          </div>
+          <h3>Mumuni Abdul-Hafiz</h3>
+          <p class="position">PRO</p>
+          <p class="phone">Phone: <a href="tel:+233242903812">+233242903812</a></p>
+        </div>
+
+         <div class="executive">
+          <div class="executive-image-wrapper">
+            <img src="path/to/executive4.jpg" alt="Executive 4's Name">
+          </div>
+          <h3>Mary Akurugu Anambire</h3>
+          <p class="position">Organizer</p>
+          <p class="phone">Phone: <a href="tel:+233+233547490714">+233547490714</a></p>
+        </div>
+
+
+
+
+        </div>
+    </div>
+  </div>
+
+</body>
+</html>
+
