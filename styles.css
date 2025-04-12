@@ -1,17 +1,17 @@
 html {
-  height: 100%; /* Make sure the html element covers the full height of the viewport */
+  height: 100%;
 }
 
 body {
-  background: url('Studies.png') no-repeat center center fixed;
+  background: url('Studies.png') no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
   padding: 10px;
   text-align: center;
-  min-height: 100%; /* Ensure the body covers at least the full screen height */
-  margin: 0; /* Reset default body margins */
+  min-height: 100%;
+  margin: 0;
 }
 
 header {
