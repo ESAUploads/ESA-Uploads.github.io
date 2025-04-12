@@ -3,7 +3,7 @@ html {
 }
 
 body {
-  background: url('Studies.png') no-repeat center center;
+  background: url('Studies.png');
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
