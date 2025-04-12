@@ -1,32 +1,37 @@
-body,
-html
-
-header {
-
-   /* Use !important to override conflicts */
-h1 {
-    color: white !important;
-   font-size: 19px
+html {
+  height: 100%; /* Make sure the html element covers the full height of the viewport */
 }
-   
-    background : url(Studies.png) no-repeat center center fixed; 
-    padding: 10px;
-     text-align: center;
+
+body {
+  background: url('Studies.png') no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  padding: 10px;
+  text-align: center;
+  min-height: 100%; /* Ensure the body covers at least the full screen height */
+  margin: 0; /* Reset default body margins */
+}
+
+header {
+    /* Use !important to override conflicts */
+ h1 {
+        color: white !important;
+       font-size: 19px
+ }
+    background : none;  /* Remove background from header */
+    padding: 10px;
+     text-align: center;
 }
 
 .faculty-badge {
     width: 140px; /* Increased size for the badge */
     height: 140px; /* Set height to make it round */
     border-radius: 50%; /* Makes the badge round */
-    object-fit: cover; /* Ensures the image covers the area without distortion */  
+    object-fit: cover; /* Ensures the image covers the area without distortion */   
     top: 20px;
-
 }
-
 
 h2{
     color: White;
@@ -43,17 +48,18 @@ nav a {
     margin: 0 15px;
     text-decoration: none;
 }
+
 main {
     padding: 20px;
 }
+
 .file {
     margin-bottom: 10px;
     color: green;
-
 }
 
 .level-button {
-      /* Button Styling - Green Buttons */
+         /* Button Styling - Green Buttons */
 
     display: inline-block; /* Make the link behave like a button */
     padding: 1rem 2rem; /* Add padding for a button-like appearance */
@@ -64,13 +70,10 @@ main {
     border-radius: 300px; /* Rounded corners */
     font-size: 16px; /* Font size */
     transition: background-color 0.3s; /* Smooth transition for hover effect */
-
 }
 
 .level-button:hover {
-    background-color: #218838; /* Darker green on hover */\
-
-
+    background-color: #218838; /* Darker green on hover */
 
 /* Button Styling - Green Buttons */
 .level-button {
@@ -86,12 +89,9 @@ main {
 }
 
 .level-button:hover {
-    background-color: #218838; /* Darker green on hover */\
-
-
+    background-color: #218838; /* Darker green on hover */
 
 } 
-
 
 .footer {
     position: fixed;
@@ -114,9 +114,8 @@ main {
 main {
     margin-bottom: 60px; /* Adjust based on footer height */
 }
- 
-   h1 {
-            font-size: 19px;
-            color: white
-      }
 
+   h1 {
+             font-size: 19px;
+             color: white
+    }
