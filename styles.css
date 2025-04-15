@@ -1,5 +1,5 @@
 body,
-html { /* You haven't set a background here, which is fine if you intend the header to be the main background */
+html {
 }
 
 header {
@@ -9,7 +9,7 @@ h1 {
    font-size: 19px
 }
 
-    background : url(Studies.png) no-repeat center center fixed;
+    background : url(Studies.png) no-repeat center center scroll; /* Changed fixed to scroll */
     padding: 10px;
       text-align: center;
  -webkit-background-size: cover;
@@ -23,7 +23,7 @@ h1 {
     height: 140px; /* Set height to make it round */
     border-radius: 50%; /* Makes the badge round */
     object-fit: cover; /* Ensures the image covers the area without distortion */
-    top: 20px; /* This might need a positioned parent to work as expected */
+    top: 20px;
 }
 
 
@@ -44,7 +44,7 @@ nav a {
 }
 main {
     padding: 20px;
-    margin-bottom: 60px; /* Adjust based on footer height */
+    margin-bottom: 60px;
 }
 .file {
     margin-bottom: 10px;
@@ -74,15 +74,15 @@ main {
     bottom: 0;
     left: 0;
     width: 100%;
-    background-color: white; /* This will likely cover any body/html background */
+    background-color: white;
     color: white;
     padding: 1rem;
     text-align: center;
     z-index: 1000;
-    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1); /* Optional: Add a shadow for depth */
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
 }
 
-h1 { /* This is a duplicate h1 style, the one inside header will likely take precedence due to specificity */
+h1 {
         font-size: 19px;
         color: white
     }
