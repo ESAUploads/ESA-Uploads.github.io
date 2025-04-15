@@ -2,7 +2,7 @@
 body,
 header {
   background: url(Studies.png) no-repeat center center;
-  background-attachment: fixed;
+  background-attachment: center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
