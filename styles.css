@@ -9,7 +9,7 @@ h1 {
    font-size: 19px
 }
    
-    background : url(Studies.jpg) no-repeat center center fixed; 
+    background : url(Studies.JPG) no-repeat center center fixed; 
     padding: 10px;
      text-align: center;
   -webkit-background-size: cover;
@@ -17,6 +17,19 @@ h1 {
   -o-background-size: cover;
   background-size: cover;
 }
+ 
+ /* Existing header styles remain unchanged */
+
+@media only screen and (max-width: 767px) {
+    header {
+        background: url('background.jpg') no-repeat center center fixed;
+        background-size: cover;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+    }
+}
+
 
 .faculty-badge {
     width: 140px; /* Increased size for the badge */
