@@ -18,18 +18,7 @@ h1 {
   background-size: cover;
 }
  
- /* Existing header styles remain unchanged */
-
-@media only screen and (max-width: 767px) {
-    header {
-        background: url('background.jpg') no-repeat center center fixed;
-        background-size: cover;
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-    }
-}
-
+ 
 
 .faculty-badge {
     width: 140px; /* Increased size for the badge */
